@@ -1,3 +1,3 @@
 # SwitftUi-Fullscreen-Modal
 
-![](./giffullscreen-modal.gif)
+![](./gif/fullscreen-modal.gif)
