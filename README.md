@@ -1,4 +1,4 @@
-# SwitftUi-Fullscreen-Modal
+# SwitftUI-Fullscreen-Modal
 
 Full screen modal using SwiftUI
 
