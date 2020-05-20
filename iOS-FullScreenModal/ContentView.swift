@@ -9,27 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State var isPresented = false
-    
-    var body: some View {
-        
-        NavigationView{
-            VStack{
-                
-                Button(action: {
-                    self.isPresented.toggle()
 
-                }, label:{
-                 Text("show standard modal")
-                })
-            }.navigationBarTitle("Standard")
-                .sheet(isPresented: $isPresented, content:{
-                    Text("Here is my modal")
-                })
-            
+    var body: some View {
+        ZStack {
+            NavigationView {
+                VStack {
+                    Button(action: {
+                        self.isPresented.toggle()
+
+                    }, label: {
+                        Text("show modal")
+                       })
+                }.navigationBarTitle("Standard")
+                    .sheet(isPresented: $isPresented, content: {
+                        Button(action: {
+                            self.isPresented.toggle()
+                        }, label: {
+                            Text("Dismiss")
+                           })
+                       })
+            }
         }
-        
     }
 }
 
